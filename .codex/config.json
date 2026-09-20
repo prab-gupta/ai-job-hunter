@@ -1,0 +1,20 @@
+{
+  "name": "ai-job-hunter",
+  "version": "1.0.0",
+  "description": "OpenAI Codex configuration for Autonomous AI Job Hunter",
+  "entrypoint": "CODEX.md",
+  "tools": [
+    {
+      "name": "dedupe_check",
+      "command": "python3 scripts/dedupe.py --check {company} {url}"
+    },
+    {
+      "name": "compile_latex",
+      "command": "python3 scripts/latex_builder.py --cv {cv_path} --letter {letter_path}"
+    },
+    {
+      "name": "apply_greenhouse",
+      "command": "python3 scripts/apply_greenhouse.py --url {url} --company {company} --role {role} --cv {cv} --letter {letter}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Prabhavit Gupta
++39 351 610 7807 | prabhavitg@gmail.com | linkedin.com/in/prabhavit | github.com/prab-gupta
+Venice, Italy
+
+To: Engineering Hiring Team - [COMPANY_NAME]
+Position: [POSITION_TITLE]
+Date: [DATE]
+
+Dear [COMPANY_NAME] Hiring Team,
+
+I am writing to express my strong enthusiasm for the [POSITION_TITLE] role at [COMPANY_NAME]. Having spent the past three years building production agentic systems, Model Context Protocol (MCP) integrations, and enterprise LLM workflows across European tech companies, I have developed a hands-on approach to turning complex customer requirements into reliable, maintainable software.
+
+In my recent work at FlowSpace as a Forward Deployed & AI Engineer, I operated at the intersection of product architecture and customer delivery. I spearheaded the architecture of multi-step agent workflows utilizing ReAct and Plan-and-Execute paradigms, building custom Python and TypeScript middleware to bridge client APIs, databases, and LLMs. I established automated evaluation harnesses to rigorously quantify reasoning trajectory fidelity and latency, eliminating regressions before production rollout. Furthermore, I led the live data migration off a legacy stack to Next.js and Laravel, scaling the platform from 2,000 to over 4,500 active users.
+
+At UltraStrategy, I built an end-to-end CV-parsing and candidate scoring pipeline using the Claude API, Affinda, and n8n, extracting structured entities from unstructured documents in production. Across client engagements at Urlink and Get2Germany, I managed technical delivery directly with stakeholders, shipping custom automations and API integrations under tight deadlines.
+
+As a permanent resident holding an Italian EU Long-Term Residence Permit (Permesso di Soggiorno UE per Soggiornanti di Lungo Periodo), I have full legal authorization to work across the EU without requiring visa sponsorship. I am based in Venice (CET timezone) and available to start immediately.
+
+I would welcome the opportunity to discuss how my practical agent engineering background and client delivery track record can contribute to [COMPANY_NAME]'s engineering goals.
+
+Thank you for your time and consideration.
+
+Sincerely,
+Prabhavit Gupta
+Venice, Italy
++39 351 610 7807

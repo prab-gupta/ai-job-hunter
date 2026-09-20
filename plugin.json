@@ -1,0 +1,83 @@
+{
+  "name": "ai-job-hunter",
+  "version": "1.0.0",
+  "description": "Universal autonomous AI job search and application plugin for Gemini Antigravity, Claude Code, and OpenAI Codex. Features multi-aggregator harvesting, bespoke single-page LaTeX CV & cover letter compilation (tectonic), automated browser form filling with Greenhouse 8-box OTP resolution, canonical 10-field ledger deduplication, and scheduled loop orchestration.",
+  "author": {
+    "name": "Prabhavit Gupta",
+    "email": "prabhavitg@gmail.com",
+    "url": "https://github.com/prab-gupta"
+  },
+  "homepage": "https://github.com/prab-gupta/ai-job-hunter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prab-gupta/ai-job-hunter.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "job-hunt",
+    "job-search",
+    "autonomous-agent",
+    "antigravity",
+    "claude-code",
+    "codex",
+    "gemini",
+    "cv-tailor",
+    "cover-letter",
+    "latex",
+    "tectonic",
+    "browser-automation",
+    "playwright",
+    "greenhouse",
+    "lever",
+    "ashby",
+    "workable",
+    "personio",
+    "recruitee",
+    "teamtailor",
+    "trakstar",
+    "deduplication",
+    "outreach",
+    "fde",
+    "ai-engineer",
+    "full-stack"
+  ],
+  "capabilities": [
+    "scheduled-loop",
+    "multi-aggregator-sweep",
+    "bespoke-latex-compilation",
+    "browser-form-fill",
+    "automated-otp-resolution",
+    "deduplication-tracking",
+    "funnel-analytics",
+    "cold-outreach",
+    "interview-prep"
+  ],
+  "skills": [
+    "skills/cv-tailor/SKILL.md",
+    "skills/browser-apply/SKILL.md",
+    "skills/job-sweep/SKILL.md",
+    "skills/dedupe-tracker/SKILL.md",
+    "skills/job-loop/SKILL.md",
+    "skills/cold-outreach/SKILL.md",
+    "skills/interview-prep/SKILL.md"
+  ],
+  "rules": [
+    "rules/AGENTS.md",
+    "rules/ZERO_EM_DASH.md",
+    "rules/LEDGER_INTEGRITY.md"
+  ],
+  "runtimes": {
+    "gemini_antigravity": {
+      "supported": true,
+      "config": "GEMINI.md"
+    },
+    "claude_code": {
+      "supported": true,
+      "config": "CLAUDE.md"
+    },
+    "openai_codex": {
+      "supported": true,
+      "config": "CODEX.md"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "name": "Prabhavit Gupta",
+  "email": "prabhavitg@gmail.com",
+  "phone": "+39 351 610 7807",
+  "location": {
+    "city": "Venice",
+    "country": "Italy",
+    "postal_code": "30175",
+    "timezone": "CET / UTC+1"
+  },
+  "profiles": {
+    "linkedin": "https://www.linkedin.com/in/prabhavit/",
+    "github": "https://github.com/prab-gupta",
+    "portfolio": "https://github.com/prab-gupta/llm-doc-parser"
+  },
+  "work_authorization": {
+    "status": "Italian EU Long-Term Residence Permit (Permesso di Soggiorno UE per Soggiornanti di Lungo Periodo)",
+    "permanent_resident": true,
+    "italy_authorized": true,
+    "eu_remote_authorized": true,
+    "eu_mobility_directive": "2003/109/EC",
+    "sponsorship_required_italy_eu_remote": false,
+    "sponsorship_required_us_uk_ch": true,
+    "partita_iva": "Active Italian Freelance / B2B Ready"
+  },
+  "salary_expectations": {
+    "eur_annual_target": 50000,
+    "eur_annual_range": "EUR 45,000 - 55,000 / year",
+    "usd_annual_target": 54000,
+    "usd_monthly": 4500,
+    "day_rate_b2b": "EUR 250 - 300 / day"
+  },
+  "languages": {
+    "hindi": "Native",
+    "english": "C2 / Bilingual",
+    "italian": "B1-B2 Conversational"
+  },
+  "education": {
+    "institution": "Ca' Foscari University of Venice",
+    "degree": "Bachelor of Arts in Philosophy, International Studies & Economics",
+    "minor": "Entrepreneurship",
+    "period": "2020 - 2024",
+    "is_cs_degree": false
+  },
+  "core_stack": [
+    "TypeScript",
+    "JavaScript",
+    "Next.js",
+    "Node.js",
+    "Python",
+    "FastAPI",
+    "Laravel (PHP)",
+    "PostgreSQL",
+    "Supabase",
+    "Claude API",
+    "Claude Code",
+    "OpenAI API",
+    "LangGraph",
+    "n8n",
+    "Make",
+    "REST APIs",
+    "Webhooks",
+    "Playwright",
+    "Docker",
+    "Git/GitHub"
+  ],
+  "experience": [
+    {
+      "company": "FlowSpace.co",
+      "role": "Full-Stack & AI Engineer / Lead Developer",
+      "location": "London, UK (Remote)",
+      "period": "Mar 2024 - Aug 2026",
+      "highlights": [
+        "Architected and deployed autonomous AI listing ingestion pipeline parsing complex PDF, spreadsheet, and image brochures into structured database records with human-in-the-loop review (900+ listings).",
+        "Built customer support AI agents using Claude API and RAG over platform inventory with confidence-based escalation.",
+        "Delivered core integrations with OfficeRnD and Nexudus APIs for live automated bookings, maintaining 99.9% sync uptime.",
+        "Scaled platform users from 2,000 to 4,500+ across Next.js, Laravel, PostgreSQL, and Supabase."
+      ]
+    },
+    {
+      "company": "UltraStrategy",
+      "role": "AI Automation Developer",
+      "location": "France (Remote)",
+      "period": "Dec 2024 - May 2025",
+      "highlights": [
+        "Built end-to-end CV-parsing and candidate assessment pipeline using Claude API, Affinda, and n8n.",
+        "Engineered automated schema validation and multi-tier profile scoring algorithms."
+      ]
+    },
+    {
+      "company": "Clubee",
+      "role": "Developer & QA Engineer",
+      "location": "Foetz, Luxembourg (Remote)",
+      "period": "Sep 2023 - Aug 2024",
+      "highlights": [
+        "Integrated core backend APIs with client-facing modules across multi-tenant applications.",
+        "Authored automated regression test suites and verified bi-weekly platform release candidates."
+      ]
+    },
+    {
+      "company": "Get2Germany & Urlink",
+      "role": "Automation Developer & Integrations Specialist",
+      "location": "Germany / Spain (Remote)",
+      "period": "Jan 2024 - Jul 2025",
+      "highlights": [
+        "Integrated Google APIs and built automated discovery pipelines to index and synchronize external listing data using n8n and PostgreSQL."
+      ]
+    }
+  ],
+  "featured_project": {
+    "name": "llm-doc-parser",
+    "url": "https://github.com/prab-gupta/llm-doc-parser",
+    "description": "Production asynchronous multi-agent document processing engine with LangGraph, strict Pydantic JSON validation, and confidence-gated human review."
+  }
+}
