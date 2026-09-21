@@ -5,16 +5,189 @@
   "entrypoint": "CODEX.md",
   "tools": [
     {
-      "name": "dedupe_check",
-      "command": "python3 scripts/dedupe.py --check {company} {url}"
+      "type": "function",
+      "function": {
+        "name": "apply_workable",
+        "description": "Submits an application via Workable.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL of the Workable job posting."
+            },
+            "company": {
+              "type": "string",
+              "description": "The name of the company."
+            },
+            "role": {
+              "type": "string",
+              "description": "The job role/title."
+            },
+            "cv": {
+              "type": "string",
+              "description": "The path to the compiled CV PDF."
+            },
+            "letter": {
+              "type": "string",
+              "description": "The path to the compiled Cover Letter PDF."
+            }
+          },
+          "required": ["url", "company", "role", "cv", "letter"]
+        }
+      }
     },
     {
-      "name": "compile_latex",
-      "command": "python3 scripts/latex_builder.py --cv {cv_path} --letter {letter_path}"
+      "type": "function",
+      "function": {
+        "name": "apply_personio",
+        "description": "Submits an application via Personio.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL of the Personio job posting."
+            },
+            "company": {
+              "type": "string",
+              "description": "The name of the company."
+            },
+            "role": {
+              "type": "string",
+              "description": "The job role/title."
+            },
+            "cv": {
+              "type": "string",
+              "description": "The path to the compiled CV PDF."
+            },
+            "letter": {
+              "type": "string",
+              "description": "The path to the compiled Cover Letter PDF."
+            }
+          },
+          "required": ["url", "company", "role", "cv", "letter"]
+        }
+      }
     },
     {
-      "name": "apply_greenhouse",
-      "command": "python3 scripts/apply_greenhouse.py --url {url} --company {company} --role {role} --cv {cv} --letter {letter}"
+      "type": "function",
+      "function": {
+        "name": "dedupe_check",
+        "description": "Checks if a job application already exists in the ledger.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "company": {
+              "type": "string",
+              "description": "The name of the company."
+            },
+            "url": {
+              "type": "string",
+              "description": "The URL of the job posting."
+            }
+          },
+          "required": ["company", "url"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "compile_latex",
+        "description": "Compiles bespoke LaTeX CV and Cover Letter.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "cv_path": {
+              "type": "string",
+              "description": "The path to the tailored LaTeX CV file."
+            },
+            "letter_path": {
+              "type": "string",
+              "description": "The path to the tailored LaTeX Cover Letter file."
+            }
+          },
+          "required": ["cv_path", "letter_path"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "apply_greenhouse",
+        "description": "Submits an application via Greenhouse.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL of the Greenhouse job posting."
+            },
+            "company": {
+              "type": "string",
+              "description": "The name of the company."
+            },
+            "role": {
+              "type": "string",
+              "description": "The job role/title."
+            },
+            "cv": {
+              "type": "string",
+              "description": "The path to the compiled CV PDF."
+            },
+            "letter": {
+              "type": "string",
+              "description": "The path to the compiled Cover Letter PDF."
+            }
+          },
+          "required": ["url", "company", "role", "cv", "letter"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "apply_ashby",
+        "description": "Submits an application via Ashby.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL of the Ashby job posting."
+            },
+            "company": {
+              "type": "string",
+              "description": "The name of the company."
+            },
+            "role": {
+              "type": "string",
+              "description": "The job role/title."
+            },
+            "cv": {
+              "type": "string",
+              "description": "The path to the compiled CV PDF."
+            },
+            "letter": {
+              "type": "string",
+              "description": "The path to the compiled Cover Letter PDF."
+            }
+          },
+          "required": ["url", "company", "role", "cv", "letter"]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "sweep_jobs",
+        "description": "Runs a multi-aggregator sweep for new job postings.",
+        "parameters": {
+          "type": "object",
+          "properties": {}
+        }
+      }
     }
   ]
 }

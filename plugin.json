@@ -66,6 +66,7 @@
     "rules/ZERO_EM_DASH.md",
     "rules/LEDGER_INTEGRITY.md"
   ],
+  "mcp_config": "mcp_config.json",
   "runtimes": {
     "gemini_antigravity": {
       "supported": true,

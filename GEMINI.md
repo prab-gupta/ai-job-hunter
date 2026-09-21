@@ -3,32 +3,27 @@
 This file guides the Google Gemini CLI and Antigravity agents when operating within the `ai-job-hunter` ecosystem.
 
 ## Discovery & Skills
-Antigravity automatically discovers skills defined in `skills/*/SKILL.md`.
+Antigravity automatically discovers skills defined in `skills/*/SKILL.md` and tools configured via the `mcp_config.json` Python MCP Server.
 
-### Core Commands & Procedures
-1. **Deduplication Check:**
-   ```bash
-   python3 scripts/dedupe.py --check "<Company>" "<Job_URL>"
-   ```
-2. **Tailoring Materials (Tectonic LaTeX):**
-   - Read candidate profile from `reference/candidate_profile.json` and `reference/MASTER_EXPERIENCE.md`.
-   - Create single-page `Prabhavit_CV_<Company>.tex` and `CoverLetter_<Company>.tex`.
-   - Compile:
-     ```bash
-     python3 scripts/latex_builder.py --cv "Prabhavit_CV_<Company>.tex"
-     python3 scripts/latex_builder.py --letter "CoverLetter_<Company>.tex"
-     ```
-   - Verify page counts: both must be exactly 1 page (`pdfinfo <file>.pdf | grep Pages` == 1).
-3. **Browser Form Submission:**
-   - For Greenhouse: Execute `scripts/apply_greenhouse.py` with automatic 8-box IMAP Gmail OTP verification.
-   - For Ashby: Execute `scripts/apply_ashby.py`.
-   - For Personio / Workable / Teamtailor / Trakstar: Execute corresponding submitter script.
-   - Capture confirmation screenshot to `confirmations/<Company>-<Date>.png`.
-4. **Ledger Recording:**
-   - Append exact 10-field row to `applications.csv`:
+### Core Autonomous Loop (Agent-Driven Orchestration)
+You are an autonomous agent responsible for driving the continuous job application loop. Do not wait for manual user commands. You must actively and continuously execute the following loop using your available MCP tools:
+
+1. **Sweep for Jobs:**
+   - Execute the `sweep_jobs` tool to run a multi-aggregator sweep and discover fresh job postings. Analyze the output to identify suitable roles.
+2. **Deduplication Check:**
+   - For each promising job, run the `dedupe_check` tool to verify if it has already been applied to. If `HIT`, skip to the next job.
+3. **Tailor Materials:**
+   - Read the candidate profile from `reference/candidate_profile.json` and `reference/MASTER_EXPERIENCE.md`.
+   - Draft a bespoke, requisition-aligned `Prabhavit_CV_<Company>.tex` and `CoverLetter_<Company>.tex`.
+   - Compile these using the `compile_latex` tool. Ensure they fit on a single page.
+4. **Apply:**
+   - Use the corresponding application tool (`apply_greenhouse`, `apply_ashby`, `apply_workable`, or `apply_personio`) to submit the application.
+5. **Ledger Recording:**
+   - On success, append an exact 10-field row to `applications.csv`:
      `date,company,role,ats,url,status,confirmation_text,salary_stated,cover_letter_attached,notes`
-5. **State Management:**
-   - Keep `loop/STATE.md` strictly under 60 lines.
+6. **State Management:**
+   - Update `loop/STATE.md` (keep it strictly under 60 lines).
+7. **Repeat:** Wait briefly if needed, then resume sweeping or process the next job in the queue.
 
 ## Hard Constraints
 - Zero em-dashes (` - ` only).
